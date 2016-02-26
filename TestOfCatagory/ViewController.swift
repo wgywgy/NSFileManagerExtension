@@ -18,10 +18,10 @@ class ViewController: UIViewController {
         testBtn.backgroundColor = UIColor.blackColor()
         testBtn.startTime(10, title: "test", waitTittle: "waiting")
         self.view.addSubview(testBtn)
-        
+
         let docString = NSFileManager.documentsPath()
-        let freeSpace = NSFileManager.availableDiskSpace()
-        
+        let freeSpace = NSFileManager.availableDiskSpaceMb()
+
         print("doc path: \(docString)")
         print("freeSpace: \(freeSpace)")
     }
@@ -31,6 +31,4 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
-
 }
-
